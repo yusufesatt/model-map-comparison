@@ -8,8 +8,11 @@ def read_and_process_csv(file_path):
     """
     Removes empty characters from the columns of the given csv file after reading it.
 
-    :param file_path
-    :return: data
+    :param
+    file_path: A list of tuples containing file paths and model names. Each tuple should have the format (
+    file_path, model_name).
+    :return:
+    data
     """
 
     data = pd.read_csv(file_path)
@@ -21,8 +24,10 @@ def visualize_combined_data(file_paths):
     """
     Creates two different graphs with mAp-50, epoch, mAp50-95 values in csv file from file path function.
 
-    :param file_paths:
-    :return:
+    :param
+    file_paths: File path and model names taken from yaml file.
+    :return
+    None
     """
 
     # map 50
@@ -82,12 +87,15 @@ def visualize_combined_data(file_paths):
 
 def read_yaml_config(config_file):
     """
-    :param config_file
+    Converts the data in the yaml file to python type and assigns it to the config_data variable, returns an error if
+    config is empty
 
-    :return config_date
+    :param
+    config_file: The path to the YAML configuration file.
 
+    :return
+    config_data: Translates from yaml file to list.
     """
-
     try:
         with open(config_file, 'r') as file:
             config_data = yaml.safe_load(file)
