@@ -105,6 +105,7 @@ def read_yaml_config(config_file):
         return []
 
 def main():
+
     config_file = 'config.yaml'
     config_data = read_yaml_config(config_file)
 
