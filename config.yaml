@@ -1,0 +1,8 @@
+- file_path: /home/yusufesat-ai/Desktop/results/results.csv
+  model_name: yolov5-m
+- file_path: /home/yusufesat-ai/Desktop/results/results1.csv
+  model_name: yolov8-l
+- file_path: /home/yusufesat-ai/Desktop/results/results2.csv
+  model_name: yolov5-l
+- file_path: /home/yusufesat-ai/Desktop/results/results3.csv
+  model_name: yolov4-s
