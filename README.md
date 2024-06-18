@@ -41,7 +41,7 @@ pip install pandas matplotlib pyyaml
    
 2. **Running the Script:** Run the following command in the terminal or command client:
    ```commandline
-   python app.py
+   python main.py
    ```
    The script will generate the charts and display them on the screen.
 
